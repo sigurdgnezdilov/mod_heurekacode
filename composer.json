@@ -1,0 +1,15 @@
+{
+    "name": "sigurd/mod_heurekacode",
+    "description": "Testovací balíček pro modifikátor.",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+	"autoload": {
+		"psr-4": {
+			"Sigurd\\": "src"
+		}
+	},
+
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}
