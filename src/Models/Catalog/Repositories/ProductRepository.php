@@ -206,7 +206,7 @@ class ProductRepository extends parentRepository
                 $seo->save();
             }
 
- 
+
 
             /**
              * Přiřazení skladů
