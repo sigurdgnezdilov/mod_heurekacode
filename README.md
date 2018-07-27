@@ -3,9 +3,12 @@ Přidává heureka kod ke každému produktu, pomocí polymorfní tabulky PMstri
 Balíček pracuje s Kontrolerem, Modelem, Repozitářem a pohledy.
 
 <strong>
-! Důležité v této verzi si po sobě balíčkovač neuklidí. Proto je nutné po odinstalaci 
+! Důležité ! V této verzi si po sobě balíčkovač neuklidí. Proto je nutné po odinstalaci 
 balíčku smazat data z DB (Pokud si data nechcete ponechat). Data jsou uložena v PMstring tabulce s ColumnName "heureka"
 .
+
+! Důležité ! V této verzi balíčkovač pracuje jenom s přetíženými kontrolery, tzn. Nové kontrolery nebudou načtené.
+
 </strong> 
 
 Fileshema :
