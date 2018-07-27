@@ -32,7 +32,15 @@ class ProductRepository extends parentRepository
         parent::__construct($product);
         $this->model = $product;
     }
-    public function create(array $params)
+
+    /**
+     * Vytvořit
+     *
+     * @param array $params
+     * @return Product
+     * @throws CreateProductInvalidArgumentException
+     */
+    public function create(array $params)  
     {
         try {
 
@@ -136,13 +144,14 @@ class ProductRepository extends parentRepository
         }
     }
 
+
     /**
      * Upravit
      *
      * @param array $params
      * @return bool
      */
-    public function updateProduct(array $params)
+    public function update(array $params) : bool
     {
         try {
 
@@ -163,6 +172,7 @@ class ProductRepository extends parentRepository
             $code = PmString::where('catalog_id' , $model->id)->where('catalog_type' , $this->alias)->first();
             if (is_null($code))
                 $code = new PmString;
+
             $code->catalog_id = $model->id;
             $code->catalog_type = $this->alias;
             $code->value = (string)$data->get('codeheureka');
@@ -274,6 +284,8 @@ class ProductRepository extends parentRepository
         } catch (QueryException $e) {
             throw new BaseInvalidArgumentException($e->getMessage(), 500, $e);
         }
+
+        return true;
     }
 
 }

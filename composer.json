@@ -1,10 +1,10 @@
 {
     "name": "sigurd/mod_heurekacode",
-    "description": "Ukázkový balíček pro modifikátor. Pridava heureka kod attribut pro produkty",
+    "description": "Ukázkový balíček pro balíčkovač. Pridava heureka kod attribut pro produkty",
     "require": {
         "php": "^5.3.3 || ^7.0"
     },
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"author": "Boundless",
 	"repository": "https://github.com/boundlessgeo/suite.git",
 	"autoload": {

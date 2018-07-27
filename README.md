@@ -35,9 +35,13 @@ Popis funkce balíčku
 -
 1. Repozitar : <br />
     Aby se produkty ukládaly správně je třeba kompletně zkopírovat celý obsah repozitáře pro produkt
- a přidat ukládání heureka kódu do DB (radek repozitare 59, 162). Repozitar dedi vsechny metody z originalu.
+    a přidat ukládání heureka kódu do DB (radek repozitare 59, 162). Repozitar dedi vsechny metody z originalu.
+    Při přetěžování metod v repozitáři je nutné zachovat jak výstupní tak vstupní konzistenci. Stejné datové typy 
+    i případné namespaces.
 2. Model : <br />
     dedi vsechny metody z originalu, navic jsou pridane metody pro praci s heureka kodem.
 3. Kontroler :<br />
-    Slouzi jenom jako prostrednik. Neobsahuje zadne vlastni metody, jenom dedi z originalu.
+    Obsahuje create a update pretizene metody. Je nutné si dát pozor aby metody vracely 
+    stejné návratové hodnotnoy jako rodic, vcetne vstupnich parametru.
+    
       
