@@ -1,9 +1,12 @@
 {
     "name": "sigurd/mod_heurekacode",
-    "description": "Testovací balíček pro modifikátor.",
+    "description": "Testovací balíček pro modifikátor. Pridava sloupec attribut pro produkty",
     "require": {
         "php": "^5.3.3 || ^7.0"
     },
+	"version": "4.8.0",
+	"author": "Boundless",
+	"repository": "https://github.com/boundlessgeo/suite.git",
 	"autoload": {
 		"psr-4": {
 			"Sigurd\\": "src"

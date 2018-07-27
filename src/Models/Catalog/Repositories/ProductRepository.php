@@ -206,17 +206,7 @@ class ProductRepository extends parentRepository
                 $seo->save();
             }
 
-
-            // if (!empty($data->get('logo'))) {
-            //
-            //   /**
-            //   * Odebrání původního obrázku
-            //   */
-            //   $this->deleteImage($this->model->id, Product::class, 'products');
-            //
-            //   $this->createImage($data->get('logo'), $data->get('name'), $this->model->id, Product::class, 'products');
-            //
-            // }
+ 
 
             /**
              * Přiřazení skladů
